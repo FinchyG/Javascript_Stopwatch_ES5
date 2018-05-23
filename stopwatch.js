@@ -1,4 +1,6 @@
-var c = 0;
+var seconds = 01;
+
 function myCounter() {
-    document.getElementById("demo").innerHTML = ++c;
+    document.getElementById("watch_display").innerHTML = seconds < 10 ? "0" + seconds : seconds;
+    seconds++;
 }
