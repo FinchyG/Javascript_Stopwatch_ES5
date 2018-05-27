@@ -1,16 +1,32 @@
 <!DOCTYPE html>
+
 <html>
+
+<head>
+        
+<title>Javascript Stopwatch</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css" />
+
+</head>
+
 <body>
 
-<p id="watch_display">00:00:00</p>
+  <div id="display_background">
+      <p id="watch_display">00:00:00</p>
+  </div>
 
-<button onclick="myTimer = setInterval(myCounter, 10)">Start</button>
+  <div id="buttons">
 
-<button onclick="clearInterval(myTimer)">Stop</button>
+      <button onclick="myTimer = setInterval(myCounter, 10)">Start</button>
 
-<button onclick="reset()">Reset</button>
+      <button onclick="clearInterval(myTimer)">Stop</button>
 
-<button onclick="split()">Split</button>
+      <button onclick="reset()">Reset</button>
+
+      <button onclick="split()">Split</button>
+
+   </div>
 
 <ul id="splits">
 </ul>

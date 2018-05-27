@@ -1,12 +1,12 @@
 var centi_seconds = 0;
-var seconds       = 55;
+var seconds       = 0;
 var minutes       = 0;
 
 function myCounter() {
 
     minutes = parseInt(minutes);
     seconds = parseInt(seconds);
-    
+
     seconds = centi_seconds > 99 ? seconds + 1 : seconds;
     minutes = seconds > 59 ? minutes + 1 : minutes;
     minutes = minutes < 10 ? "0" + minutes : minutes;
