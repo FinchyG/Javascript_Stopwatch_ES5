@@ -2,11 +2,13 @@
 <html>
 <body>
 
-<button onClick="myTimer = setInterval(myCounter, 1000)">Start</button>
-
 <p id="watch_display">00:00</p>
 
-<button onClick="clearInterval(myTimer)">Stop</button>
+<button onclick="myTimer = setInterval(myCounter, 1000)">Start</button>
+
+<button onclick="clearInterval(myTimer)">Stop</button>
+
+<button onclick="reset()">Reset</button>
 
 </body>
 

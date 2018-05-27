@@ -14,3 +14,7 @@ function myCounter() {
     seconds++;
 
 }
+
+function reset() {
+    location.reload();
+}
