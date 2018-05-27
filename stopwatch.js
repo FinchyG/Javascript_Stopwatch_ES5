@@ -16,5 +16,18 @@ function myCounter() {
 }
 
 function reset() {
+
     location.reload();
+
+}
+
+function split() {
+
+    var split_time = document.getElementById("watch_display").textContent;
+    var ul         = document.getElementById("splits");
+    var li         = document.createElement("li");
+    
+    li.appendChild(document.createTextNode(split_time));
+    ul.appendChild(li);
+    
 }
