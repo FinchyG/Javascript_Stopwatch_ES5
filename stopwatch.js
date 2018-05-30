@@ -1,9 +1,14 @@
 var centi_seconds = 0;
 var seconds       = 0;
 var minutes       = 0;
+var running       = 1;
 var interval;
 
 function stopwatch_start() {
+
+    running++;
+
+    if(running === 2) {
 
     interval = setInterval(function(){
 
@@ -22,12 +27,14 @@ function stopwatch_start() {
 
     document.getElementById("watch_display").innerHTML = minutes + ":" + seconds + ":" + centi_seconds;
     centi_seconds++;},10);
+    }
 
 }
 
 function stopwatch_stop() {
 
     clearInterval(interval);
+    running = 1;
 
 }
 
