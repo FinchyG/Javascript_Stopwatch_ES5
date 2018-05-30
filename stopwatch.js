@@ -1,8 +1,11 @@
 var centi_seconds = 0;
 var seconds       = 0;
 var minutes       = 0;
+var interval;
 
-function myCounter() {
+function stopwatch_start() {
+
+    interval = setInterval(function(){
 
     minutes = parseInt(minutes);
     seconds = parseInt(seconds);
@@ -18,7 +21,13 @@ function myCounter() {
     centi_seconds = centi_seconds > 99 ? "0" + 0 : centi_seconds;
 
     document.getElementById("watch_display").innerHTML = minutes + ":" + seconds + ":" + centi_seconds;
-    centi_seconds++;
+    centi_seconds++;},10);
+
+}
+
+function stopwatch_stop() {
+
+    clearInterval(interval);
 
 }
 
