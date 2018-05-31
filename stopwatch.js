@@ -12,18 +12,25 @@ function stopwatch_start() {
 
     interval = setInterval(function(){
 
+    // code to remove string zeros for number-based conditionals 
+
     minutes = parseInt(minutes);
     seconds = parseInt(seconds);
 
+    // code to increase the count of seconds and minutes
+
     seconds = centi_seconds > 99 ? seconds + 1 : seconds;
     minutes = seconds > 59 ? minutes + 1 : minutes;
-    minutes = minutes < 10 ? "0" + minutes : minutes;
+    
+    // code to format the displayed numbers
+
+    centi_seconds = centi_seconds < 10 ? "0" + centi_seconds : centi_seconds;
+    centi_seconds = centi_seconds > 99 ? "0" + 0 : centi_seconds;
 
     seconds = seconds < 10 ? "0" + seconds : seconds;
     seconds = seconds > 59 ? "0" + 0 : seconds;
 
-    centi_seconds = centi_seconds < 10 ? "0" + centi_seconds : centi_seconds;
-    centi_seconds = centi_seconds > 99 ? "0" + 0 : centi_seconds;
+    minutes = minutes < 10 ? "0" + minutes : minutes;
 
     document.getElementById("watch_display").innerHTML = minutes + ":" + seconds + ":" + centi_seconds;
     centi_seconds++;},10);
