@@ -50,6 +50,12 @@ function reset() {
     var watch_display = document.getElementById("watch_display");
     watch_display.innerHTML = "00:00:00";
 
+    var ul = document.getElementById("splits");
+
+        while( ul.firstChild ){
+            ul.removeChild( ul.firstChild );
+          }
+
     return centi_seconds = 0, seconds = 0, minutes = 0;
 
 }
