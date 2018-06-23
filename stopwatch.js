@@ -47,7 +47,10 @@ function stopwatch_stop() {
 
 function reset() {
 
-    location.reload();
+    var watch_display = document.getElementById("watch_display");
+    watch_display.innerHTML = "00:00:00";
+
+    return centi_seconds = 0, seconds = 0, minutes = 0;
 
 }
 
