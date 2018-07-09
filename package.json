@@ -1,0 +1,22 @@
+{
+  "name": "javascript_stopwatch_es5",
+  "version": "1.0.0",
+  "description": "\"Description\"",
+  "main": "stopwatch.js",
+  "scripts": {
+    "test": "\"test\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FinchyG/Javascript_Stopwatch_ES5.git"
+  },
+  "author": "\"FinchyG\"",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FinchyG/Javascript_Stopwatch_ES5/issues"
+  },
+  "homepage": "https://github.com/FinchyG/Javascript_Stopwatch_ES5#readme",
+  "devDependencies": {
+    "eslint-config-airbnb-es5": "^1.2.0"
+  }
+}

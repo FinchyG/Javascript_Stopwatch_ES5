@@ -1,0 +1,6 @@
+{
+    "extends": "airbnb-es5",
+    "env": {
+        "browser": true
+        }
+}
