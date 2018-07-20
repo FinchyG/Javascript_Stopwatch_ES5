@@ -27,7 +27,6 @@ module.exports = function(grunt) { //eslint-disable-line
       grunt.loadNpmTasks('grunt-contrib-uglify');
       grunt.loadNpmTasks('grunt-contrib-cssmin');
 
-      grunt.registerTask('default', [ 'uglify']);
-      grunt.registerTask('default', [ 'cssmin']);
-    
+      grunt.registerTask('default', [ 'uglify', 'cssmin']);
+      
 };
